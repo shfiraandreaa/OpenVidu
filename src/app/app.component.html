@@ -1,0 +1,79 @@
+<!-- logo -->
+	<div class="container container-logo">
+		<a class="navbar-brand">
+			<img src="assets/images/web.png" alt="">
+		</a>
+	</div>
+
+<!-- main-content -->
+	<div class="main-content">
+	
+		<img class="left-content" src="assets/images/Digital 1.png" alt="">
+		<div class="text">
+			<h1>Digital Banking</h1>
+			<h1 style="color: #e4e3e3 !important; ">Meeting Conference</h1>
+		</div>
+
+		<div class="rigth-content">
+			<img class="img-2" src="assets/images/Foto jadi.png" alt="">
+			<div class="logo">
+				<a href="#" class="btn" aria-disabled="true">
+					<img src="assets/images/on app store.png" alt="">
+				</a>
+				<a href="#" class="btn" aria-disabled="true">
+					<img src="assets/images/on playstore.png" alt="">
+				</a>
+				<a href="#" class="btn" aria-disabled="true">
+					<img src="assets/images/slack.png" alt="">
+				</a>
+			</div>
+		</div>
+
+	<!-- nav -->
+		<div class="main-form">
+			<ul class="navbar-nav mr-auto">
+				<li class="nav-item">
+					<a class="nav-link active" href="#">Start a new meeting</a>
+				  </li>
+				  <li class="nav-item">
+					<a class="nav-link" href="#">Calendar</a>
+				  </li>
+				  <li class="nav-item">
+					<a class="nav-link" href="#">Recent</a>
+				  </li>
+			</ul>
+		</div>
+
+
+	<!-- form-join-dialog -->
+		<div *ngIf="!session" id="join">
+			<div id="join-dialog">
+				<form class="form-group" (submit)="joinSession()">
+					<p>
+						<input class="form-control" type="text" id="userName" name="userName" [(ngModel)]="myUserName" required>
+					</p>
+					<p>
+						<input class="form-control" type="text" id="sessionId" name="sessionId"  required>
+					</p>
+					<p class="text-end type-submit">
+						<input class="btn btn-lg " type="submit" name="commit" value="GO" style="background-color: #005E6A !important; width: 75px;  height:50px; color: #fff; border-radius: 3px !important;">
+					</p>
+				</form>
+			</div>
+		</div>
+
+	</div>
+
+
+<!-- footer -->
+	<div class="footer1">
+		<img src="assets/images/DGB Back.png" alt="">
+		<div class="text-footer">
+			<p class=" text-right">
+				Digital Banking is powered by Jitsi Meet
+			</p>
+			<p class=" text-right">
+				Copyrigth &copy; 2020 Digital Bank of PT.Bank Negara Indonesia (Persero) Tbk
+			</p>
+		</div>
+	</div>
